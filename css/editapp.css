@@ -1,0 +1,62 @@
+body
+{
+   background-color: #3CB371;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+a
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+a:visited
+{
+   color: #800080;
+}
+a:active
+{
+   color: #FF0000;
+}
+a:hover
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+input:focus, textarea:focus, select:focus
+{
+   outline: none;
+}
+.col{float: left; clear: none; width:30%; padding:15px;}
+.col input,select,textarea{margin-top:5px; margin-bottom: 10px;}
+
+
+#Close{background: rgb(200,0,0); border: 1px solid black; border-radius: 2px; margin-left: 5px; padding: 4px 10px 5px 10px;}
+#Close a{text-decoration: none; color: white; font-size: 16px;}
+
+#Update_form{width:70%; margin:auto; margin-top:4%}
+
+#Update_form input,select{margin-top: 5px; margin-bottom: 5px;}
+#Update_form div{padding-top: 5px;}
+#Update_form h1,span{color: white;}
+#Update_form input,select,span{font-size: 14px; padding: 5px;}
+#Button2{width: 150px;}
+#buttons-div {margin-top: 20px;}
+
+@media screen and (max-width: 1000px){
+   #Update_form{width: 90%; margin: auto; margin-top: 0px;}
+   #Update_form input,select,span{font-size: 40px; padding: 10px;}
+   #Update_form h1 {font-size: 60px; padding: 10px;}
+   #Update_form input,select{margin-top: 10px; margin-bottom: 10px;}
+   #Update_form div{padding-top: 10px;}
+
+   #Close {margin-left: 5px; padding: 9px 15px 10px 15px;}
+   #Close a {text-decoration: none; color: white; font-size: 40px;}
+   #Button2{width: 350px;}
+   #buttons-div {margin-top: 30px;}
+   .col{width:90%;}
+}

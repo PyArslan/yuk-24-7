@@ -1,0 +1,62 @@
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+a
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+a:visited
+{
+   color: #800080;
+}
+a:active
+{
+   color: #FF0000;
+}
+a:hover
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+input:focus, textarea:focus, select:focus
+{
+   outline: none;
+}
+/*#chart {overflow: scroll;}*/
+#chart table {border-collapse: collapse; margin: auto; border: 1px solid black;}
+
+#chart table td {
+    border: 1px dashed grey; 
+    padding: 10px; 
+    height: 20px; 
+    width: 100px; 
+    font-size: 12px; 
+    text-align: center; 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+#chart table td:first-child {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+  }
+
+#chart table tfoot {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+}
+
+#chart table .labels-top {background-color: green; color: white; border: 1px solid black;}
+#chart table .labels-bottom {background-color: #29adff; color: white; border: 1px solid black;}
+#chart table .count {background-color: cornflowerblue; font-size: 14px;}
