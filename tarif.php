@@ -12,7 +12,7 @@ function ValidateEmail($email)
 }
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['formid']) && $_POST['formid'] == 'tarifform')
 {
-   $mailto = 'haytektm@gmail.com';
+   $mailto = 'example@gmail.com';
    $mailfrom = isset($_POST['email']) ? $_POST['email'] : $mailto;
    $subject = 'Тариф';
    $message = '';
@@ -26,11 +26,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['formid']) && $_POST['f
    try
    {
       $mail->IsSMTP();
-      $mail->Host = 'smtp.gmail.com';
-      $mail->Port = 587;
+      $mail->Host = 'SERVER';
+      $mail->Port = PORT;
       $mail->SMTPAuth = true;
-      $mail->Username = 'haytek.marketing@gmail.com';
-      $mail->Password = 'hytsxjsyzzjjmakw';
+      $mail->Username = 'EXAMPLE@MAIL';
+      $mail->Password = 'PASSWORD';
       $mail->SMTPSecure = 'tls';
       $mail->Subject = stripslashes($subject);
       $mail->From = $mailfrom;
